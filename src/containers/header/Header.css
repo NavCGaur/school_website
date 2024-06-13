@@ -1,0 +1,173 @@
+/* Header top section styling */
+.header__top{
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    font-family: var(--font-family);
+    font-size: 0.8rem;
+    color: white;
+    background-color: #023710;
+}
+
+.header__icon{
+    height: 1rem;
+    width: 1rem;
+    fill: white;
+    margin-right: 0.3rem;
+}
+
+/* Contact section styling */
+.header__contact{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    margin-left: 2rem;
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+}
+
+.header__container a{
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Login button styling */
+.header__login{
+    margin-right: 6rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.header__button {
+    display: inline-block;
+    height: 2.5rem;
+    width: 6rem;
+    background-color: #fdc800;
+    text-align: center;
+    color: black;
+    font: var(--font-family);
+    border-radius: 4px;
+    padding-top: .5rem;
+    transition: background-color 0.3s;
+       
+}
+
+.header__login a:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+
+.header__login a{
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+/*Header mid section styling*/
+
+.header__mid{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__affiliation {
+    display: inline-block;
+    width: 35%;
+    height: 120px;
+}
+
+.header__location, .header__email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-right: 20px;
+}
+
+
+/*Styling location, email icons*/
+.location__icon, .email__icon{
+    height: 3rem;
+    width: 3rem;
+    fill: #fdc800;
+}
+
+.location__text :nth-child(1), .email__text :nth-child(1){
+    font-family: var(--font-family);
+    font-weight: 800;
+
+}
+
+.location__text :nth-child(2), .email__text :nth-child(2){
+    font-family: var(--font-family);
+    font-size: 0.8rem;
+    font-weight: 600;
+
+}
+
+/* Navbar section styling*/
+.header__nav{
+    background-color: #023710;
+}
+
+
+
+
+/* Responsive styling */
+@media (max-width: 900px) {
+    .header__top {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+         }
+
+    .header__contact{
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 0.6rem;
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
+        }
+    .header__login{
+        display: flex;
+        justify-content: center;   
+        align-items: center;
+        
+    }        
+    .header__button{
+        width: 200px;
+    }
+
+}
+@media (max-width: 600px) {
+
+    .header__login{
+        margin-left: 4rem;
+    }
+
+    .header__affiliation{
+        width: 80%;
+    }
+
+    .header__mid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__email{
+        margin-right: 75px;
+    }
+  
+
+}
