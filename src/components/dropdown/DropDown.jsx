@@ -9,10 +9,8 @@ import { ReactComponent as CaretDown } from '../../assets/caretdown.svg'; // Imp
 function DropDown({title,index}) {//destructuring props, getting title,index from parent component Navbar
 
 
-// State to manage whether the dropdown is visible (mouse is over the title)
+  // State to manage whether the dropdown is visible (mouse is over the title)
   const [mouseOver, setMouseOver]= useState(false); //useState for mouse entering and mouse exiting
-
-  
 
   // Data for dropdown, each array represents the dropdown items for each title
     const dropDownData = [['Affiliation Details','Mandatory Disclosure'], 
@@ -47,11 +45,10 @@ function DropDown({title,index}) {//destructuring props, getting title,index fro
       </div>
 
               
-        {/* Dropdown list, visibility controlled by mouseOver state */}
-        <ul className={mouseOver?'dropdown__list':'dropdown__list-hidden'} > 
-          {dropDownData[index].map((item,idx)=> 
-          <li key={idx}>{item}</li>)}       
-        </ul>
+      {/* Dropdown list, visibility controlled by mouseOver state */}
+      <ul className={mouseOver?'dropdown__list':'dropdown__list-hidden'} > 
+        {dropDownData[index].map((item,idx)=> <li key={idx}>{item}</li>)}       
+      </ul>
 
     </div>
   )
