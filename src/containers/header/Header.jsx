@@ -8,6 +8,8 @@ import { ReactComponent as Location } from '../../assets/location.svg'; // Impor
 
 import SchoolInfo from '../../assets/schoolInfo.png';
 
+import {default as NavbarCopy} from '../NavbarCopy/NavbarCopy'; //Testing 2nd way of making Navbar
+
 
 function Header() {
   return (
@@ -68,13 +70,19 @@ function Header() {
     </div>
       
 
-    <nav className='header__nav'>
-      <Navbar />
-    </nav>
     
+    
+    <nav className='header__navcopy'>
+      <NavbarCopy />
+    </nav>
 
   </header>
   )
 }
 
 export default Header
+
+
+//<nav className='header__nav'>
+//<Navbar />
+//</nav>

@@ -24,13 +24,14 @@
     color: black;
     list-style: none;
     z-index: 2;
+    background-color: white;
     border-radius: 10px;
     width: 250px;
     padding-left: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     border: 1px solid gray;
-    background-color: rgb(139, 189, 139, 1);
+    background-color: rgb(139, 189, 139, 0.8);
 
     }
 
