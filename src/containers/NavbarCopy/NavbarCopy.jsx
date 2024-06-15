@@ -56,7 +56,6 @@ function NavbarCopy() {
 
           <div className='navbarcopy__title'>
            <p>{title}</p>
-
            <CaretDown className='navbarcopy__caretdown'/>   
           </div>        
 

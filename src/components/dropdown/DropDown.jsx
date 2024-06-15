@@ -1,5 +1,6 @@
 import React, {useState } from 'react';
 import './DropDown.css'
+import { dropDownData } from '../../containers/navbar/data';
 
 import { ReactComponent as CaretDown } from '../../assets/caretdown.svg'; // Importing CaretDown SVG as a React component
 
@@ -11,17 +12,6 @@ function DropDown({title,index}) {//destructuring props, getting title,index fro
 
   // State to manage whether the dropdown is visible (mouse is over the title)
   const [mouseOver, setMouseOver]= useState(false); //useState for mouse entering and mouse exiting
-
-  // Data for dropdown, each array represents the dropdown items for each title
-    const dropDownData = [['Affiliation Details','Mandatory Disclosure'], 
-                      ['About the School','Our Motto','Vision', 'Faculty'],
-                      ['Activities Calender','Curriculam','Activities','School Calender'],
-                      ['Affiliation Details','Mandatory Disclosure'],
-                      ['About the School','Our Motto','Vision', 'Faculty'],
-                      ['Activities Calender','Curriculam','Activities','School Calender'],
-                      ['About the School','Our Motto','Vision', 'Faculty'],
-                      ['Activities Calender','Curriculam','Activities','School Calender']
-                      ]
 
   //  Set mouseOver to true when mouse enters the Title Div                  
   function handleMouseEnter(){
@@ -51,7 +41,7 @@ function DropDown({title,index}) {//destructuring props, getting title,index fro
       </ul>
 
     </div>
-  )
+  ) 
 }
 
 export default DropDown

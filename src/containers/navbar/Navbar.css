@@ -1,6 +1,6 @@
 .navbar{
     display: flex;
-    justify-content:space-around;
+    justify-content:flex-start;
     align-items: center;
     font-family: var(--font-family);
     font-weight: 600;
@@ -11,28 +11,52 @@
     width: 100%;
 }
 
+
 .navbar__dropdown{
     display: flex;
+    margin-right: 50px;
+    flex-wrap: wrap;
 }
 
-.navbar__menuicon{
+.navbar__menu{
     display: none;
 }
 
-@media (max-width: 1050px){
+
+
+.navbar__home{
+    width: 10%;
+    padding-left: 25px;
+}
+
+@media (max-width: 1200px){
+
+    .navbar__home{
+        visibility: hidden;    
+    }
+}
+
+
+@media (max-width: 800px){
 
     .navbar{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     }
+    .navbar__menu{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+
     .navbar__menuicon{
         display: block;
         height: 1.5rem;
         width: 1.5rem;
         margin: 1rem;
         fill: white;
-        cursor: pointer;
     }
     .navbar__home{
         display: none;

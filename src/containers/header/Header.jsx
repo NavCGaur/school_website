@@ -68,12 +68,9 @@ function Header() {
       </div>
 
     </div>
-      
-
     
-    
-    <nav className='header__navcopy'>
-      <NavbarCopy />
+    <nav className='header__nav'>
+      <Navbar />
     </nav>
 
   </header>
@@ -83,6 +80,7 @@ function Header() {
 export default Header
 
 
-//<nav className='header__nav'>
-//<Navbar />
-//</nav>
+/* <nav className='header__navcopy'>
+      <NavbarCopy />
+    </nav>
+*/
