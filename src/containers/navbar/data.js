@@ -10,5 +10,5 @@ export const dropDownData = [['Affiliation Details','Mandatory Disclosure'],
                              ['Activities Calender','Curriculam','Activities','School Calender'],
                              ['About the School','Our Motto','Vision', 'Faculty'],
                              ['Activities Calender','Curriculam','Activities','School Calender']
-]
+                            ]
   

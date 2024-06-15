@@ -1,6 +1,6 @@
 import React, {useState } from 'react';
 import './DropDown.css'
-import { dropDownData } from '../../containers/navbar/data';
+import { dropDownData } from '../../containers/navbar/data'; //Importing DropDown data from data.js
 
 import { ReactComponent as CaretDown } from '../../assets/caretdown.svg'; // Importing CaretDown SVG as a React component
 
