@@ -1,6 +1,7 @@
 import React from 'react'
 import './Main.css'
 import { Carousel } from '../../components'
+import {Blog} from '../index'
 
 
 
@@ -8,10 +9,13 @@ import { Carousel } from '../../components'
 function Main() {
   return (
     <div className='main'>
-      <Carousel />
+      
+      <div>
+        <Carousel />
+      </div>
       
       <div className='blog'>
-
+        <Blog />
       </div>
 
       <div  className='gallery'>

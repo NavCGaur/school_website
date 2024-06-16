@@ -8,11 +8,6 @@ import Image3 from '../../assets/carousel-image-3.jpg';
 import Image4 from '../../assets/carousel-image-4.jpg';
 import {ReactComponent as Circle} from '../../assets/circle.svg'
 import {ReactComponent as CircleDot} from '../../assets/circle-dot.svg'
-
-
-
-
-
 import {ReactComponent as LeftArrow}  from '../../assets/leftarrow.svg';
 import {ReactComponent as RightArrow}  from '../../assets/rightarrow.svg';
 
