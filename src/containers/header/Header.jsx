@@ -9,6 +9,7 @@ import { ReactComponent as Location } from '../../assets/location.svg'; // Impor
 import SchoolInfo from '../../assets/schoolInfo.png';
 
 import {default as NavbarCopy} from '../NavbarCopy/NavbarCopy'; //Testing 2nd way of making Navbar
+import { TextScroll } from '../../components';
 
 
 function Header() {
@@ -72,6 +73,8 @@ function Header() {
     <nav className='header__nav'>
       <Navbar />
     </nav>
+
+    <TextScroll />
 
   </header>
   )

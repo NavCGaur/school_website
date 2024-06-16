@@ -1,0 +1,22 @@
+.textscroll{
+    background-color: #fdc800;
+    height: 30px;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+.textscroll p{
+
+    font-family: var(--font-family);
+    margin-left: 40px;
+    padding-top: 5px;
+    animation: anim 40s linear infinite;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgb(2, 55, 16);
+
+}
+
+@keyframes anim{
+    0% {transform: translatex(100%);}
+    100% {transform: translatex(0%);}
+}
