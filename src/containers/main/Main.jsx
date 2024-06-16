@@ -2,6 +2,7 @@ import React from 'react'
 import './Main.css'
 import { Carousel } from '../../components'
 import {Blog} from '../index'
+import {Gallery} from '../../components'
 
 
 
@@ -19,7 +20,7 @@ function Main() {
       </div>
 
       <div  className='gallery'>
-
+        <Gallery />
       </div>
 
       <div className='cta'>

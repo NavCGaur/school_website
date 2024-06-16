@@ -5,6 +5,7 @@ export {default as Contact} from './contact/Contact';
 export {default as DropDown} from './dropdown/DropDown';
 export {default as Modal} from './modal/Modal';
 export {default as TextScroll} from './textscroll/TextScroll';
+export {default as Gallery} from '../components/gallery/Gallery'
 
 
 

@@ -11,8 +11,8 @@ function Footer() {
 
       <div className='footer__topcontainer'>
         
-      <div className='footer__contact'>
-          <div className='title'>
+        <div className='footer__contact'>
+          <div className='footer__title'>
             <h2>Contact Information</h2>
           </div>
 
@@ -21,7 +21,7 @@ function Footer() {
               <Location className='footer__icon'/>
               <p>K Public School</p>
             </div>
-            <p>Radada, Rishikesh, Dehradun -248156</p>
+            <p className='footer__address-text'>Radada, Rishikesh, Dehradun -248156</p>
 
             <div className='footer__container'>
               <Phone className='footer__icon'/>
