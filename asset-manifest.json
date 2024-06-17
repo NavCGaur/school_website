@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/school_website/static/css/main.150479e7.css",
+    "main.css": "/school_website/static/css/main.273a2f60.css",
     "main.js": "/school_website/static/js/main.522e1efd.js",
     "static/js/453.00a81ccd.chunk.js": "/school_website/static/js/453.00a81ccd.chunk.js",
     "static/media/carousel-image-2.jpg": "/school_website/static/media/carousel-image-2.84a3b9f64d271b53a20b.jpg",
@@ -26,12 +26,12 @@
     "static/media/caretdown.svg": "/school_website/static/media/caretdown.cac346a6368e0279cec60e78115c434f.svg",
     "static/media/circle-dot.svg": "/school_website/static/media/circle-dot.3f673682b11103ca0d81effab86a6785.svg",
     "static/media/circle.svg": "/school_website/static/media/circle.9cf3c396e7aa8dbcc04eaac70a110f39.svg",
-    "main.150479e7.css.map": "/school_website/static/css/main.150479e7.css.map",
+    "main.273a2f60.css.map": "/school_website/static/css/main.273a2f60.css.map",
     "main.522e1efd.js.map": "/school_website/static/js/main.522e1efd.js.map",
     "453.00a81ccd.chunk.js.map": "/school_website/static/js/453.00a81ccd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.150479e7.css",
+    "static/css/main.273a2f60.css",
     "static/js/main.522e1efd.js"
   ]
 }
