@@ -19,25 +19,38 @@ font-weight: 500;
     max-width: 100%;
     display: block;
 }
-.carousal__rightarrow {
+.blog__rightarrow {
+    height: 1.5rem;
+    width: 1.5rem;
     top: 30%;
-    left: 85%
+    left:85%;
+    fill: white;
+    position: absolute;
+
 }
-.carousal__leftarrow{
+.blog__leftarrow{
     top:30%;
-    left: 5%
+    left: 5%;
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: white;
+    position: absolute;
+
+
 }
 
 .blog__outContainer{
     display: flex;
     flex-direction: row;
+    width: 100%;
 
 }
 
 .blog__insideContainer{
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
     position: absolute;
-    overflow: hidden;
 }
 
 .blog__para{

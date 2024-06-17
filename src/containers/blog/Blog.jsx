@@ -45,11 +45,11 @@ function showNextImage() {
                 <div className='blog__carousal'>
                     <img src={images[imageIndex]} key={index} ></img>
 
-                    <div className='carousal__arrow' onClick={showPrevImage}>
-                     <LeftArrow className='carousal__leftarrow'/>
-                        </div>
-                    <div className='carousal__arrow'onClick={showNextImage}>
-                     <RightArrow className='carousal__rightarrow'/>
+                    <div className='blog__arrow' onClick={showPrevImage}>
+                     <LeftArrow className='blog__leftarrow'/>
+                    </div>
+                    <div className='blog__arrow'onClick={showNextImage}>
+                     <RightArrow className='blog__rightarrow'/>
                     </div>
                 </div>
 
