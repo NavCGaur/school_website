@@ -9,8 +9,8 @@ import Image3 from '../../assets/carousel-image-3.jpg';
 import Image4 from '../../assets/carousel-image-4.jpg';
 
 
-import {ReactComponent as LeftArrow}  from '../../assets/leftarrow.svg';
-import {ReactComponent as RightArrow}  from '../../assets/rightarrow.svg';
+import {ReactComponent as BlogLeftArrow}  from '../../assets/leftarrow.svg';
+import {ReactComponent as BlogRightArrow}  from '../../assets/rightarrow.svg';
 
 function Blog() {
 
@@ -46,10 +46,10 @@ function showNextImage() {
                     <img src={images[imageIndex]} key={index} ></img>
 
                     <div className='blog__arrow' onClick={showPrevImage}>
-                     <LeftArrow className='blog__leftarrow'/>
+                     <BlogLeftArrow className='blog__leftarrow'/>
                     </div>
                     <div className='blog__arrow'onClick={showNextImage}>
-                     <RightArrow className='blog__rightarrow'/>
+                     <BlogRightArrow className='blog__rightarrow'/>
                     </div>
                 </div>
 
@@ -89,15 +89,15 @@ function showNextImage() {
                 </div>
 
                 <div className='blog__textscroll-text'>
-                <div class='blog__textscroll-text-content'>
+                    <div class='blog__textscroll-text-content'>
 
-                    <p>	
-                       "Heartiest congratulations to Sanskriti of Grade 5B on emerging victorious in the Under-11 Inter School Badminton Competition organised by Dehradun Sports Association! Your exceptional skills, dedication, and passion for the game have paid off. We are incredibly proud of your achievement and wish you continued success in your future endeavors!"
-                    </p>
-                    <p>The Orientation Programme will be held on Monday, 1st April, 2024.</p>
-                    <p>	Admissions Open (2024-25) from Grade Pre-Nursery to 9th and 11th </p>
-                    <p>	Annual Day Celebration 2022-23 Annual Sports Day of class Pre Nursery to 2 was celebrated with great enthusiasm at Public School, Rishikesh on 22nd December 2022.</p>
-                </div>
+                        <p>	
+                        "Heartiest congratulations to Sanskriti of Grade 5B on emerging victorious in the Under-11 Inter School Badminton Competition organised by Dehradun Sports Association! Your exceptional skills, dedication, and passion for the game have paid off. We are incredibly proud of your achievement and wish you continued success in your future endeavors!"
+                        </p>
+                        <p>The Orientation Programme will be held on Monday, 1st April, 2024.</p>
+                        <p>	Admissions Open (2024-25) from Grade Pre-Nursery to 9th and 11th </p>
+                        <p>	Annual Day Celebration 2022-23 Annual Sports Day of class Pre Nursery to 2 was celebrated with great enthusiasm at Public School, Rishikesh on 22nd December 2022.</p>
+                    </div>
 
                 </div>
         </div>

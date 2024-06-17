@@ -13,12 +13,13 @@
 }
 
 .carousal__leftarrow, .carousal__rightarrow {
+      
+    fill: white;
+    z-index: 2;
     top: 50%;
     position: absolute;
     height: 2rem;
     width: 2rem;
-    fill: white;
-    z-index: 2;
 }
 
 .carousal__rightarrow{
@@ -84,3 +85,19 @@
     background-color: rgba(0, 0, 0, 0.4); /* Black color with 50% opacity */
     z-index: 1; /* Ensure the background is behind the arrow icon */
   }
+
+ @media (max-width: 800px){
+
+    .carousal__leftarrow, .carousal__rightarrow{
+        height: 1rem;
+        width: 1rem;
+    }
+
+    .carousal__circle--empty, .carousal__circle--dot{
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+    
+   
+
+ }
