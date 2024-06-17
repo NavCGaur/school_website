@@ -69,6 +69,7 @@
         display: flex; /* Show dropdowns when openMenu is true */
         flex-direction: column; /* Stack titles vertically */
         width: 100%;
+        margin-right: 0;;
 
       }
     
