@@ -119,6 +119,7 @@ cursor: pointer;
 }
 .blog__para1 h2{
     padding-bottom: 15px;
+    text-align: left;
 }
 .blog__para2 h2{
     padding-left: 15px;
@@ -181,11 +182,13 @@ background-color: white;
         display: flex;
         flex-direction: row;
         width: 100%;
+
     }
     .blog__para1{
         flex: 1;
         padding-left: 5px;
     }
+    
 
     .blog__para2{
         flex:1;  

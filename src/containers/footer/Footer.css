@@ -60,3 +60,23 @@
     text-align: center;
     background-color: black;
 }
+
+@media (max-width: 800px){
+    .footer__topcontainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer__contact{
+        width: 100%;
+    }
+
+    .footer__mapframe{
+        display: block;
+        max-width: 100%;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    
+    }
+}
