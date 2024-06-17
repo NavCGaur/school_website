@@ -48,7 +48,7 @@ function Footer() {
       </div>
 
       <div className='footer__copyright'>
-        <p>Copyright ©2024 Delhi Public School Rishikesh . All Rights Reserved</p>
+        <p>Copyright ©2024 Public School Rishikesh . All Rights Reserved</p>
       </div>
 
     </div>

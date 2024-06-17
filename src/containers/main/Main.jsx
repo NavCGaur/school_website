@@ -3,6 +3,7 @@ import './Main.css'
 import { Carousel } from '../../components'
 import {Blog} from '../index'
 import {Gallery} from '../../components'
+import {Cta} from '../../components'
 
 
 
@@ -24,7 +25,7 @@ function Main() {
       </div>
 
       <div className='cta'>
-
+      <Cta />
       </div>
 
 
