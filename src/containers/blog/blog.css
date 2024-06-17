@@ -17,7 +17,7 @@
     background-color: #023710;
 }
 .blog__carousal img{
-    height: 200px;
+    height: 150px;
     max-width: 100%;
     display: block;
     object-fit: cover;
