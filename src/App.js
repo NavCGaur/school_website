@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css';
-//import {Modal} from './components'
+import {Modal} from './components'
 import {Header, Main, Footer} from './containers'
 
 
 function App() {
   return (
     <div >
-     {/* <Modal />*/}
+      <Modal />
       <Header />
       <Main />
       <Footer />

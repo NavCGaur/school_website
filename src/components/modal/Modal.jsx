@@ -13,8 +13,8 @@ function Modal() {
   }
 
   return (
-    <div className= 'modal'>
-      <div className={isModalOpen? 'modal__container': 'modal__container--hidden' }>
+    <div className= {isModalOpen? 'modal':'modal--hidden' }>
+      <div className={'modal__container' }>
         <div className='modal__close' onClick={closeModal}>
           <Xmark className="modal__close-icon" /> 
         </div>
