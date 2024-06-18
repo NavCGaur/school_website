@@ -1,7 +1,11 @@
+//React import
 import React from 'react'
+
+//Style import
 import './Cta.css'
 
-import{ReactComponent as Icon} from '../../assets/user.svg'
+//importing SVG
+import{CtaUser} from '../../assets/assets.js'
 
 function Cta() {
     
@@ -15,7 +19,7 @@ function Cta() {
         </div>
         <div className='cta__links'>
             {links.map((link,index)=> <div className='cta__container' key={index}>
-                <Icon className='cta__icon'/>
+                <CtaUser className='cta__icon'/>
                 <p>{link}</p>
             </div>)}
 

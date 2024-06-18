@@ -1,19 +1,16 @@
-import React from 'react';
-import './Carousel.css';
-import { useState } from 'react';
+//React imports
+import { useState, React} from 'react';
 
-import Image1 from '../../assets/carousel-image-1.jpg';
-import Image2 from '../../assets/carousel-image-2.jpg';
-import Image3 from '../../assets/carousel-image-3.jpg';
-import Image4 from '../../assets/carousel-image-4.jpg';
-import {ReactComponent as Circle} from '../../assets/circle.svg'
-import {ReactComponent as CircleDot} from '../../assets/circle-dot.svg'
-import {ReactComponent as LeftArrow}  from '../../assets/leftarrow.svg';
-import {ReactComponent as RightArrow}  from '../../assets/rightarrow.svg';
+//Style imports
+import './Carousel.css';
+
+//Importing SVG and images
+import {carouselImage1, carouselImage2, carouselImage3, carouselImage4, CarouselCircle, CarouselCircleDot, LeftArrow, RightArrow} from '../../assets/assets.js'
+
 
 function Carousel() {
 
-  const images = [Image1, Image2, Image3, Image4] ;
+  const images = [carouselImage1, carouselImage2, carouselImage3, carouselImage4] ;
 
   const [imageIndex, setImageIndex] = useState(0)
 
@@ -29,27 +26,27 @@ function Carousel() {
 
   return (
     
-    <div className='carousal'>
-      <div className='carousal__banner' > 
+    <div className='carousel'>
+      <div className='carousel__banner' > 
         {images.map((image, index)=> <img src={image} alt='' key={index} style={{ transform: `translateX(${-100 * imageIndex}%)`,
                                                                                   transition: 'transform 0.5s ease-in-out' }}/>)}
         
       </div>
 
-      <div className='carousal__arrow' onClick={showPrevImage}>
-        <LeftArrow className='carousal__leftarrow'/>
-        <div className='carousal__arrow-leftbg' ></div>
+      <div className='carousel__arrow' onClick={showPrevImage}>
+        <LeftArrow className='carousel__leftarrow'/>
+        <div className='carousel__arrow-leftbg' ></div>
       </div>
-      <div className='carousal__arrow'onClick={showNextImage}>
-        <RightArrow className='carousal__rightarrow'/>
-        <div className='carousal__arrow-rightbg' ></div>
+      <div className='carousel__arrow'onClick={showNextImage}>
+        <RightArrow className='carousel__rightarrow'/>
+        <div className='carousel__arrow-rightbg' ></div>
       </div>
 
-      <div className='carousal__circle'>
+      <div className='carousel__circle'>
         {images.map((_,index)=> (imageIndex === index ? 
-          (<CircleDot key={index} className='carousal__circle--dot' />  ) 
+          (<CarouselCircleDot key={index} className='carousel__circle--dot' />  ) 
           : 
-          (<Circle key={index} className='carousal__circle--empty' />  )
+          (<CarouselCircle key={index} className='carousel__circle--empty' />  )
           ))}
       </div>
   </div>

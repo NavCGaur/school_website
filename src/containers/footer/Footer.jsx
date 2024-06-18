@@ -1,9 +1,11 @@
+//React import
 import React from 'react'
+
+//Style import
 import './Footer.css'
 
-import {ReactComponent as Location} from '../../assets/location.svg'
-import {ReactComponent as Phone} from '../../assets/phone.svg'
-import {ReactComponent as Envelope} from '../../assets/envelope.svg'
+//importing SVG
+import {Location, Phone, Envelope} from '../../assets/assets'
 
 function Footer() {
   return (

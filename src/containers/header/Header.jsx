@@ -1,15 +1,17 @@
+// React imports
 import React from 'react'
-import './Header.css' //Importing stylesheet
+
+// Style imports
+import './Header.css' 
+
+//Component import
 import {Navbar} from '../index'
-import { ReactComponent as Phone } from '../../assets/phone.svg'; // Importing Phone SVG as a React component
-import { ReactComponent as Envelope } from '../../assets/envelope.svg'; // Importing Envelope SVG as a React component
-import { ReactComponent as Worldweb } from '../../assets/worldweb.svg'; // Importing Worldweb SVG as a React component
-import { ReactComponent as Location } from '../../assets/location.svg'; // Importing Location SVG as a React component
+import {TextScroll} from '../../components';
 
-import SchoolInfo from '../../assets/schoolInfo.png';
 
-import {default as NavbarCopy} from '../NavbarCopy/NavbarCopy'; //Testing 2nd way of making Navbar
-import { TextScroll } from '../../components';
+//Importing SVG and images
+import { Phone, Location, Envelope, HeaderWorldWeb, headerSchoolInfo  } from '../../assets/assets.js'; // 
+
 
 
 function Header() {
@@ -30,7 +32,7 @@ function Header() {
                 <a href='mailto:kpsrishi@gmail.com' aria-label='Email'> kpsrishi@gmail.com</a>
             </div>
             <div className='header__container'>
-                < Worldweb className='header__icon'/>
+                < HeaderWorldWeb className='header__icon'/>
                 <a href='http://www.dpsrishikesh.com' target='_blank' rel='noopener noreferrer' aria-label='Website'>www.kpsrishi.com</a>
             </div>
         </div>
@@ -48,7 +50,7 @@ function Header() {
     <div className='header__mid'>
 
       {/* Affiliation */}
-        <img src={SchoolInfo} alt='School affiliation details' className='header__affiliation'/>
+        <img src={headerSchoolInfo} alt='School affiliation details' className='header__affiliation'/>
 
       {/* Location */}
       <div className='header__location'>

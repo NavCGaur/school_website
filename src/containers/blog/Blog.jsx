@@ -1,22 +1,19 @@
-import React from 'react';
+//React imports
+import {useState, React} from 'react';
+
+//Style import
 import './blog.css';
-import { useState } from 'react';
+
+//SVG and image exports
+import {carouselImage1, carouselImage2, carouselImage3, carouselImage4, LeftArrow, RightArrow} from '../../assets/assets.js'
 
 
-import Image1 from '../../assets/carousel-image-1.jpg';
-import Image2 from '../../assets/carousel-image-2.jpg';
-import Image3 from '../../assets/carousel-image-3.jpg';
-import Image4 from '../../assets/carousel-image-4.jpg';
-
-
-import {ReactComponent as BlogLeftArrow}  from '../../assets/leftarrow.svg';
-import {ReactComponent as BlogRightArrow}  from '../../assets/rightarrow.svg';
 
 function Blog() {
 
 const [imageIndex, setImageIndex] = useState(0)
 
-const images = [Image1, Image2, Image3, Image4];
+const images = [carouselImage1, carouselImage2, carouselImage3, carouselImage4];
 
 const descriptions = [ "Children's Day"," Playground", "Performance"," More Activities" ];
 
@@ -46,10 +43,10 @@ function showNextImage() {
                     <img src={images[imageIndex]} key={index} ></img>
 
                     <div className='blog__arrow' onClick={showPrevImage}>
-                     <BlogLeftArrow className='blog__leftarrow'/>
+                     <LeftArrow className='blog__leftarrow'/>
                     </div>
                     <div className='blog__arrow'onClick={showNextImage}>
-                     <BlogRightArrow className='blog__rightarrow'/>
+                     <RightArrow className='blog__rightarrow'/>
                     </div>
                 </div>
 

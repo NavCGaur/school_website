@@ -29,6 +29,7 @@
     left:85%;
     fill: white;
     position: absolute;
+    cursor: pointer;
     
 
 }
@@ -39,6 +40,8 @@
     width: 1.5rem;
     fill: white;
     position: absolute;
+    cursor: pointer;
+
 
 
 }

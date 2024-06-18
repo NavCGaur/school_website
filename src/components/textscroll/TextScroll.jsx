@@ -1,4 +1,7 @@
+//React import
 import React from 'react'
+
+//Style import
 import './TextScroll.css'
 
 function TextScroll() {

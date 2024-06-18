@@ -1,18 +1,18 @@
 
-.carousal{
+.carousel{
     position: relative;
     z-index: 0;
     
 }
 
-.carousal__arrow{
+.carousel__arrow{
     height: 100%;
     background-color: white;
     width: 20%;
        
 }
 
-.carousal__leftarrow, .carousal__rightarrow {
+.carousel__leftarrow, .carousel__rightarrow {
       
     fill: white;
     z-index: 2;
@@ -20,17 +20,19 @@
     position: absolute;
     height: 2rem;
     width: 2rem;
+    cursor: pointer;
+
 }
 
-.carousal__rightarrow{
+.carousel__rightarrow{
     right: 40px;
 }
 
-.carousal__leftarrow{
+.carousel__leftarrow{
     left: 40px;
 }
 
-.carousal__banner{
+.carousel__banner{
     position: relative;
     display: flex;
     flex-direction: row; 
@@ -38,12 +40,12 @@
     z-index: 1;
 
 }
-.carousal__banner img{
+.carousel__banner img{
     width: 100vw;
 
 }
 
-.carousal__circle{
+.carousel__circle{
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -55,19 +57,19 @@
     
 }
 
-.carousal__circle--empty{
+.carousel__circle--empty{
     height: 1.2rem;
     width: 1.2rem;
     fill: white;
 }
 
-.carousal__circle--dot{
+.carousel__circle--dot{
     fill: black;
     height: 1.2rem;
     width: 1.2rem;
 }
 
-.carousal__arrow-leftbg {
+.carousel__arrow-leftbg {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -76,7 +78,7 @@
     z-index: 1; /* Ensure the background is behind the arrow icon */
   }
 
-  .carousal__arrow-rightbg{
+  .carousel__arrow-rightbg{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -88,12 +90,13 @@
 
  @media (max-width: 800px){
 
-    .carousal__leftarrow, .carousal__rightarrow{
+    .carousel__leftarrow, .carousel__rightarrow{
         height: 1rem;
         width: 1rem;
+        cursor: pointer;
     }
 
-    .carousal__circle--empty, .carousal__circle--dot{
+    .carousel__circle--empty, .carousel__circle--dot{
         height: 0.8rem;
         width: 0.8rem;
     }

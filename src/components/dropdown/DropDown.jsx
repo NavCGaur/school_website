@@ -1,10 +1,14 @@
+//React imports
 import React, {useState } from 'react';
+
+//Style imports
 import './DropDown.css'
+
+//Importing DropDown data from data.js
 import { dropDownData } from '../../containers/navbar/data'; //Importing DropDown data from data.js
 
-import { ReactComponent as CaretDown } from '../../assets/caretdown.svg'; // Importing CaretDown SVG as a React component
-
-
+//Importing CaretDown SVG
+import { DropDownCaretDown } from '../../assets/assets.js'; 
 
 
 function DropDown({title,index}) {//destructuring props, getting title,index from parent component Navbar
@@ -31,7 +35,7 @@ function DropDown({title,index}) {//destructuring props, getting title,index fro
       
       <div className='dropdown__title' >
         {title} 
-        <CaretDown className='dropdown__caretdown'/>  {/* Caret down icon */}
+        <DropDownCaretDown className='dropdown__caretdown'/>  {/* Caret down icon */}
       </div>
 
               

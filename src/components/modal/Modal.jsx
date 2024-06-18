@@ -1,7 +1,11 @@
-import React,{ useState } from 'react'; // Combining React and useState import
-import './Modal.css'; //Importing CSS for styling the modal
-import { ReactComponent as Xmark } from '../../assets/xmark.svg'; // Importing SVG as a React component
-import ModalImage from '../../assets/modalpic.jpg'; // Importing an image for the modal
+// React imports, Combining React and useState import
+import React,{ useState } from 'react'; 
+
+// Style imports
+import './Modal.css'; 
+
+// Importing SVG, image
+import { ModalXMark, modalImage  } from '../../assets/assets.js';
 
 function Modal() {
 
@@ -16,10 +20,11 @@ function Modal() {
     <div className= {isModalOpen? 'modal':'modal--hidden' }>
       <div className={'modal__container' }>
         <div className='modal__close' onClick={closeModal}>
-          <Xmark className="modal__close-icon" /> 
+          <p>Close</p>
+          <ModalXMark className="modal__close-icon" /> 
         </div>
         <div className='modal__image' >
-          <img src={ModalImage} alt='Debate win Congratulations' ></img>
+          <img src={modalImage} alt='Debate win Congratulations' ></img>
         </div>
       </div>
       
