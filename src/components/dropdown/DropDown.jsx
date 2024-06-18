@@ -4,14 +4,11 @@ import React, {useState } from 'react';
 //Style imports
 import './DropDown.css'
 
-//Importing DropDown data from data.js
-import { dropDownData } from '../../containers/navbar/data'; //Importing DropDown data from data.js
-
 //Importing CaretDown SVG
 import { DropDownCaretDown } from '../../assets/assets.js'; 
 
 
-function DropDown({title,index}) {//destructuring props, getting title,index from parent component Navbar
+function DropDown({menuData}) {//Getting data from parent component Navbar
 
 
   // State to manage whether the dropdown is visible (mouse is over the title)
@@ -34,14 +31,14 @@ function DropDown({title,index}) {//destructuring props, getting title,index fro
 
       
       <div className='dropdown__title' >
-        {title} 
+        {menuData.title} 
         <DropDownCaretDown className='dropdown__caretdown'/>  {/* Caret down icon */}
       </div>
 
               
       {/* Dropdown list, visibility controlled by mouseOver state */}
       <ul className={mouseOver?'dropdown__list':'dropdown__list-hidden'} > 
-        {dropDownData[index].map((item,idx)=> <li key={idx}>{item}</li>)}       
+        {menuData.items.map((item,idx)=> <li key={idx}>{item}</li>)}       
       </ul>
 
     </div>
