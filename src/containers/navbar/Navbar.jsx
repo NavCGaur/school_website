@@ -14,7 +14,6 @@ import { NavbarMenu } from '../../assets/assets.js'; //
 import { titles} from './data'; //Importing Titles data from data.js
 
 
-
 function Navbar() {
 
   const [openMenu, setOpenMenu] = useState(false);

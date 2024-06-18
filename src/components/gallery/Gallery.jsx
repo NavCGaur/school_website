@@ -8,8 +8,6 @@ import './Gallery.css'
 import {GalleryBell, GalleryCamera, GalleryVideo, GalleryUpDownLeftRightArrow} from '../../assets/assets.js';
 
 
-
-
 function Gallery() {
   return (
     <div className='gallery'>

@@ -66,7 +66,7 @@ function Header() {
         <Envelope className='email__icon'/>
         <div className='email__text'>
           <p>MAIL US TODAY</p>
-          <p>kpsrishi@gmail.com</p>
+          <a href='mailto:kpsrishi@gmail.com' aria-label='Email'> kpsrishi@gmail.com</a>
         </div>
       </div>
 
@@ -83,9 +83,3 @@ function Header() {
 }
 
 export default Header
-
-
-/* <nav className='header__navcopy'>
-      <NavbarCopy />
-    </nav>
-*/
